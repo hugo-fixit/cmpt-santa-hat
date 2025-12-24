@@ -17,6 +17,8 @@
 
 ## Features
 
+![santa-hat](https://github.com/user-attachments/assets/6cf191ca-1455-46ae-a939-6539a2143c4d)
+
 - 🎅 Automatically adds Santa hat decoration to site logos during Christmas season (December 20-26)
 - 🎯 Automatic date detection, no manual toggling required
 - 💫 Lightweight implementation with no performance impact
