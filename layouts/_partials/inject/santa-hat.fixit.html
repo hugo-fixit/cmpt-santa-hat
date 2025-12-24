@@ -1,0 +1,14 @@
+{{- $fingerprint := .Site.Store.Get "fingerprint" -}}
+
+{{- /* CSS */ -}}
+{{- $options := dict "Source" "css/santa-hat.scss" "Fingerprint" $fingerprint -}}
+{{- $toCSS := dict "targetPath" "css/santa-hat.min.css" "enableSourceMap" true -}}
+{{- $options = dict "Context" . "ToCSS" $toCSS | merge $options -}}
+{{- partial "plugin/style.html" $options -}}
+
+{{- /* JS */ -}}
+{{- $options := dict "targetPath" "js/santa-hat.fixit.min.js" "minify" hugo.IsProduction -}}
+{{- if not hugo.IsProduction -}}
+  {{- $options = dict "sourceMap" "inline" | merge $options -}}
+{{- end -}}
+{{- dict "Source" "js/santa-hat.fixit.ts" "Build" $options "Fingerprint" $fingerprint "Defer" true "Async" true | dict "Page" . "Data" | partial "store/script.html" -}}

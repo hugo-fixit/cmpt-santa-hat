@@ -1,34 +1,30 @@
 <!-- markdownlint-disable-file MD033 MD041 -->
-<h1 align="center">{component-xxx} | FixIt</h1>
-
-<!-- TODO feature image here if needed -->
+<h1 align="center">🎄 Santa Hat | FixIt</h1>
 
 <div align="center" class="ignore">
-  <p><!-- TODO description here if needed --></p>
+  <p>A Christmas Easter Egg by JavaScript.</p>
   <a href="/README.md">简体中文</a> |
-  <a href="https://fixit.lruihao.cn/zh-cn/ecosystem/hugo-fixit/{component-xxx}/?lang=chinese_traditional">繁體中文</a> |
+  <a href="https://fixit.lruihao.cn/zh-cn/ecosystem/hugo-fixit/cmpt-santa-hat/?lang=chinese_traditional">繁體中文</a> |
   English |
-  <a href="https://fixit.lruihao.cn/ecosystem/hugo-fixit/{component-xxx}/?lang=french">Français</a> |
-  <a href="https://fixit.lruihao.cn/ecosystem/hugo-fixit/{component-xxx}/?lang=russian">Русский язык</a> |
-  <a href="https://fixit.lruihao.cn/ecosystem/hugo-fixit/{component-xxx}/?lang=spanish">Español</a> |
-  <a href="https://fixit.lruihao.cn/ecosystem/hugo-fixit/{component-xxx}/?lang=hindi">हिन्दी</a> |
-  <a href="https://fixit.lruihao.cn/ecosystem/hugo-fixit/{component-xxx}/?lang=deutsch">deutsch</a> |
-  <a href="https://fixit.lruihao.cn/ecosystem/hugo-fixit/{component-xxx}/?lang=korean">한국어</a> |
-  <a href="https://fixit.lruihao.cn/ecosystem/hugo-fixit/{component-xxx}/?lang=japanese">しろうと</a>
+  <a href="https://fixit.lruihao.cn/ecosystem/hugo-fixit/cmpt-santa-hat/?lang=french">Français</a> |
+  <a href="https://fixit.lruihao.cn/ecosystem/hugo-fixit/cmpt-santa-hat/?lang=russian">Русский язык</a> |
+  <a href="https://fixit.lruihao.cn/ecosystem/hugo-fixit/cmpt-santa-hat/?lang=spanish">Español</a> |
+  <a href="https://fixit.lruihao.cn/ecosystem/hugo-fixit/cmpt-santa-hat/?lang=hindi">हिन्दी</a> |
+  <a href="https://fixit.lruihao.cn/ecosystem/hugo-fixit/cmpt-santa-hat/?lang=deutsch">deutsch</a> |
+  <a href="https://fixit.lruihao.cn/ecosystem/hugo-fixit/cmpt-santa-hat/?lang=korean">한국어</a> |
+  <a href="https://fixit.lruihao.cn/ecosystem/hugo-fixit/cmpt-santa-hat/?lang=japanese">しろうと</a>
 </div>
-
-## Demo
-
-TODO demo here if needed
 
 ## Features
 
-- [ ] Foo
-- [ ] Bar
+- 🎅 Automatically adds Santa hat decoration to site logos during Christmas season (December 20-26)
+- 🎯 Automatic date detection, no manual toggling required
+- 💫 Lightweight implementation with no performance impact
 
 ## Requirements
 
 - FixIt v0.4.0 or later.
+- Recommended logo size: 32x32 pixels.
 
 ## Install Component
 
@@ -47,7 +43,7 @@ Then add this theme component to your `hugo.toml` configuration file:
 path = "github.com/hugo-fixit/FixIt"
 
 [[module.imports]]
-path = "github.com/hugo-fixit/{component-xxx}"
+path = "github.com/hugo-fixit/cmpt-santa-hat"
 ```
 
 On the first start of Hugo it will download the required files.
@@ -65,46 +61,28 @@ Clone [FixIt](https://github.com/hugo-fixit/FixIt) and this git repository into 
 
 ```bash
 git submodule add https://github.com/hugo-fixit/FixIt.git themes/FixIt
-git submodule add https://github.com/hugo-fixit/{component-xxx}.git themes/{component-xxx}
+git submodule add https://github.com/hugo-fixit/cmpt-santa-hat.git themes/cmpt-santa-hat
 ```
 
 Next edit `hugo.toml` of your project and add this theme component to your themes:
 
 ```toml
-theme = ["FixIt", "{component-xxx}"]
+theme = ["FixIt", "cmpt-santa-hat"]
 ```
 
 ## Configuration
 
-In order to Inject the partial `{component-xxx}.html` into the `custom-assets` through the [custom block](https://fixit.lruihao.cn/references/blocks/) opened by the FixIt theme in the `layouts/_partials/custom.html` file, you need to fill in the following necessary configurations:
+In order to Inject the partial `santa-hat.fixit.html` into the `custom-assets` through the [custom block](https://fixit.lruihao.cn/references/blocks/) opened by the FixIt theme in the `layouts/_partials/custom.html` file, you need to fill in the following necessary configurations:
 
 ```toml
 [params]
 
 [params.customPartials]
 # ... other partials
-head = []
-profile = []
-aside = []
-comment = []
-footer = []
-widgets = []
 assets = [
-  "inject/{component-xxx}.html",
+  "inject/santa-hat.fixit.html",
 ]
-postFooterBefore = []
-postFooterAfter = []
 # ... other partials
-```
-
-TODO configuration here if needed ...
-
-## Use Shortcode
-
-Here is an example of usage:
-
-```markdown
-{{< shortcode-xxx >}}
 ```
 
 ## References

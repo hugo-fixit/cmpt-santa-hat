@@ -1,34 +1,30 @@
 <!-- markdownlint-disable-file MD033 MD041 -->
-<h1 align="center">{component-xxx} | FixIt</h1>
-
-<!-- TODO 如有需要，请在此处添加图片 -->
+<h1 align="center">🎄 Santa Hat | FixIt</h1>
 
 <div align="center" class="ignore">
-  <p><!-- TODO 如有需要，请在此处添加描述 --></p>
+  <p>一个 JavaScript 实现的圣诞节小彩蛋。</p>
   简体中文 |
-  <a href="https://fixit.lruihao.cn/zh-cn/ecosystem/hugo-fixit/{component-xxx}/?lang=chinese_traditional">繁體中文</a> |
+  <a href="https://fixit.lruihao.cn/zh-cn/ecosystem/hugo-fixit/cmpt-santa-hat/?lang=chinese_traditional">繁體中文</a> |
   <a href="/README.en.md">English</a> |
-  <a href="https://fixit.lruihao.cn/ecosystem/hugo-fixit/{component-xxx}/?lang=french">Français</a> |
-  <a href="https://fixit.lruihao.cn/ecosystem/hugo-fixit/{component-xxx}/?lang=russian">Русский язык</a> |
-  <a href="https://fixit.lruihao.cn/ecosystem/hugo-fixit/{component-xxx}/?lang=spanish">Español</a> |
-  <a href="https://fixit.lruihao.cn/ecosystem/hugo-fixit/{component-xxx}/?lang=hindi">हिन्दी</a> |
-  <a href="https://fixit.lruihao.cn/ecosystem/hugo-fixit/{component-xxx}/?lang=deutsch">deutsch</a> |
-  <a href="https://fixit.lruihao.cn/ecosystem/hugo-fixit/{component-xxx}/?lang=korean">한국어</a> |
-  <a href="https://fixit.lruihao.cn/ecosystem/hugo-fixit/{component-xxx}/?lang=japanese">しろうと</a>
+  <a href="https://fixit.lruihao.cn/ecosystem/hugo-fixit/cmpt-santa-hat/?lang=french">Français</a> |
+  <a href="https://fixit.lruihao.cn/ecosystem/hugo-fixit/cmpt-santa-hat/?lang=russian">Русский язык</a> |
+  <a href="https://fixit.lruihao.cn/ecosystem/hugo-fixit/cmpt-santa-hat/?lang=spanish">Español</a> |
+  <a href="https://fixit.lruihao.cn/ecosystem/hugo-fixit/cmpt-santa-hat/?lang=hindi">हिन्दी</a> |
+  <a href="https://fixit.lruihao.cn/ecosystem/hugo-fixit/cmpt-santa-hat/?lang=deutsch">deutsch</a> |
+  <a href="https://fixit.lruihao.cn/ecosystem/hugo-fixit/cmpt-santa-hat/?lang=korean">한국어</a> |
+  <a href="https://fixit.lruihao.cn/ecosystem/hugo-fixit/cmpt-santa-hat/?lang=japanese">しろうと</a>
 </div>
-
-## Demo
-
-TODO 如有需要，请在此处添加演示
 
 ## 特性
 
-- [ ] Foo
-- [ ] Bar
+- 🎅 自动在圣诞节期间（12 月 20 日至 26 日）为网站 Logo 添加圣诞帽装饰
+- 🎯 自动检测当前日期，无需手动开关
+- 💫 轻量级实现，不影响网站性能
 
 ## 要求
 
 - FixIt v0.4.0 或更高版本。
+- 推荐 Logo 尺寸：32x32 像素。
 
 ## 安装组件
 
@@ -47,7 +43,7 @@ TODO 如有需要，请在此处添加演示
 path = "github.com/hugo-fixit/FixIt"
 
 [[module.imports]]
-path = "github.com/hugo-fixit/{component-xxx}"
+path = "github.com/hugo-fixit/cmpt-santa-hat"
 ```
 
 在 Hugo 的第一次启动时，它将下载所需的文件。
@@ -65,46 +61,28 @@ hugo mod tidy
 
 ```bash
 git submodule add https://github.com/hugo-fixit/FixIt.git themes/FixIt
-git submodule add https://github.com/hugo-fixit/{component-xxx}.git themes/{component-xxx}
+git submodule add https://github.com/hugo-fixit/cmpt-santa-hat.git themes/cmpt-santa-hat
 ```
 
 接下来编辑项目的 `hugo.toml` 并将此主题组件添加到你的主题中：
 
 ```toml
-theme = ["FixIt", "{component-xxx}"]
+theme = ["FixIt", "cmpt-santa-hat"]
 ```
 
 ## 配置
 
-为了通过 FixIt 主题在 `layouts/_partials/custom.html` 文件中开放的 [自定义块](https://fixit.lruihao.cn/references/blocks/) 将 `{component-xxx}.html` 注入到 `custom-assets` 中，你需要填写以下必要配置：
+为了通过 FixIt 主题在 `layouts/_partials/custom.html` 文件中开放的 [自定义块](https://fixit.lruihao.cn/references/blocks/) 将 `santa-hat.fixit.html` 注入到 `custom-assets` 中，你需要填写以下必要配置：
 
 ```toml
 [params]
 
 [params.customPartials]
 # ... other partials
-head = []
-profile = []
-aside = []
-comment = []
-footer = []
-widgets = []
 assets = [
-  "inject/{component-xxx}.html",
+  "inject/santa-hat.fixit.html",
 ]
-postFooterBefore = []
-postFooterAfter = []
 # ... other partials
-```
-
-TODO 如有需要，请在此处添加配置...
-
-## 使用 Shortcode
-
-以下是一个使用示例：
-
-```markdown
-{{< shortcode-xxx >}}
 ```
 
 ## 参考
