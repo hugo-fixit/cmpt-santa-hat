@@ -24,7 +24,6 @@
 ## Requirements
 
 - FixIt v0.4.0 or later.
-- Recommended logo size: 32x32 pixels.
 
 ## Install Component
 
@@ -84,6 +83,13 @@ assets = [
 ]
 # ... other partials
 ```
+
+## Styling
+
+- Recommended logo size: 32x32 pixels.
+- CSS variables:
+  - `--fi-santa-hat-offset`: Controls hat translation relative to the logo, default `8px 2px`.
+  - `--fi-santa-hat-shadow`: Controls hat shadow RGB values, default `0, 0, 0`; automatically switches to `255, 255, 255` in dark mode.
 
 ## References
 

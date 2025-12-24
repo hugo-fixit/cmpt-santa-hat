@@ -10,6 +10,7 @@
     z-index: 1;
     translate: var(--fi-santa-hat-offset, 8px 2px);
     position: absolute;
+    animation: jiggle 0.4s ease-in-out;
 
     + img.logo {
       // Simulates the effect of a hat covering

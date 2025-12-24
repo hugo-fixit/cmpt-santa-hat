@@ -9,7 +9,7 @@ function setSantaHat() {
 
   // Check if the date is between December 20th and December 26th
   if (month === 12 && day >= 20 && day <= 26) {
-    console.log('Happy Christmas!')
+    console.log('Merry Christmas~')
     const logos = document.querySelectorAll('.header-wrapper .logo')
     logos.forEach((logo) => {
       const hat = document.createElement('img')
