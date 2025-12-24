@@ -1,8 +1,8 @@
 {{- $fingerprint := .Site.Store.Get "fingerprint" -}}
 
 {{- /* CSS */ -}}
-{{- $options := dict "Source" "css/santa-hat.scss" "Fingerprint" $fingerprint -}}
-{{- $toCSS := dict "targetPath" "css/santa-hat.min.css" "enableSourceMap" true -}}
+{{- $options := dict "Source" "css/santa-hat.fixit.scss" "Fingerprint" $fingerprint -}}
+{{- $toCSS := dict "targetPath" "css/santa-hat.fixit.min.css" "enableSourceMap" true -}}
 {{- $options = dict "Context" . "ToCSS" $toCSS | merge $options -}}
 {{- partial "plugin/style.html" $options -}}
 
