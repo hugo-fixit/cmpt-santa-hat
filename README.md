@@ -91,7 +91,9 @@ assets = [
   - `--fi-santa-hat-offset`：控制圣诞帽相对于 Logo 的平移偏移，默认值 `8px 2px`。
   - `--fi-santa-hat-shadow`：控制帽子阴影的 RGB 值，默认值 `0, 0, 0`，暗色模式下会自动切换为 `255, 255, 255`。
 
+<!-- 
 ## 参考
 
 - [开发主题组件 | FixIt](https://fixit.lruihao.cn/contributing/components/)
 - [如何开发 Hugo 主题组件 | FixIt](https://fixit.lruihao.cn/components/dev-component/)
+-->

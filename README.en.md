@@ -91,7 +91,9 @@ assets = [
   - `--fi-santa-hat-offset`: Controls hat translation relative to the logo, default `8px 2px`.
   - `--fi-santa-hat-shadow`: Controls hat shadow RGB values, default `0, 0, 0`; automatically switches to `255, 255, 255` in dark mode.
 
+<!--
 ## References
 
 - [Develop Theme Components | FixIt](https://fixit.lruihao.cn/contributing/components/)
 - [How to Develop a Hugo Theme Component | FixIt](https://fixit.lruihao.cn/components/dev-component/)
+-->
