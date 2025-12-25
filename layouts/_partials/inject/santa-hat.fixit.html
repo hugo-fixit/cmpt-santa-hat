@@ -1,5 +1,8 @@
 {{- $fingerprint := .Site.Store.Get "fingerprint" -}}
 
+{{- /* Image */ -}}
+{{- $_ := (resources.Get "images/santa-hat.svg").RelPermalink -}}
+
 {{- /* CSS */ -}}
 {{- $options := dict "Source" "css/santa-hat.fixit.scss" "Fingerprint" $fingerprint -}}
 {{- $toCSS := dict "targetPath" "css/santa-hat.fixit.min.css" "enableSourceMap" true -}}
