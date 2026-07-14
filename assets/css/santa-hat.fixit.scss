@@ -10,15 +10,13 @@
     z-index: 1;
     translate: var(--fi-santa-hat-offset, 8px 2px);
     position: absolute;
+    top: 0;
     animation: jiggle 0.4s ease-in-out;
 
     + img.logo {
+      --fi-santa-hat-shadow: light-dark(rgba(0, 0, 0, 0.6), rgba(255, 255, 255, 0.6));
       // Simulates the effect of a hat covering
-      filter: drop-shadow(0.5px -0.5px 1px rgba(var(--fi-santa-hat-shadow, 0, 0 , 0), 0.6));
-
-      [data-theme='dark'] & {
-        --fi-santa-hat-shadow: 255, 255 , 255;
-      }
+      filter: drop-shadow(0.5px -0.5px 1px var(--fi-santa-hat-shadow));
     }
   }
 

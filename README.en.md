@@ -25,11 +25,11 @@
 
 ## Requirements
 
-- FixIt v0.4.0 or later.
+- FixIt v1.0.0 or later.
 
 ## Install Component
 
-The installation method is the same as [installing a theme](https://fixit.lruihao.cn/documentation/installation/). There are several ways to install, choose one, Here are two mainstream ways.
+The installation method is the same as [installing a theme](https://fixit.lruihao.cn/docs/installation/). There are several ways to install, choose one, Here are two mainstream ways.
 
 ### Install as Hugo Module
 
@@ -78,7 +78,7 @@ In order to Inject the partial `santa-hat.fixit.html` into the `custom-assets` t
 ```toml
 [params]
 
-[params.customPartials]
+[params.custom_partials]
 # ... other partials
 assets = [
   "inject/santa-hat.fixit.html",
@@ -91,7 +91,7 @@ assets = [
 - Recommended logo size: 32x32 pixels.
 - CSS variables:
   - `--fi-santa-hat-offset`: Controls hat translation relative to the logo, default `8px 2px`.
-  - `--fi-santa-hat-shadow`: Controls hat shadow RGB values, default `0, 0, 0`; automatically switches to `255, 255, 255` in dark mode.
+  - `--fi-santa-hat-shadow`: Controls hat shadow color, default `light-dark(rgba(0, 0, 0, 0.6), rgba(255, 255, 255, 0.6))`; automatically adapts to light/dark mode.
 
 <!--
 ## References
